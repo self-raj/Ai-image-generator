@@ -13,7 +13,7 @@ const Home = () => {
 }
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/generate-image", {
+      const res = await axios.post("https://ai-image-backend-1-l08u.onrender.com/api/generate-image", {
         prompt,
       });
       console.log(res,"Response from server:");
